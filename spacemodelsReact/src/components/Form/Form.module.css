@@ -1,0 +1,53 @@
+:root {
+    --rosa-color: #ec3c6c;
+    --azul-color: #52c0bc;
+  
+    --font-titulo: 'Montserrat', sans-serif;
+    --font-parrafo: 'Poppins', sans-serif;
+  
+  }
+  
+  
+  
+
+
+.Form {
+    background-color: var(--rosa-color);
+    z-index: 10; /* Aumenta el z-index para que sea mayor que el de .overlay */
+    position: relative; /* Agrega un contexto de posicionamiento */
+    padding: 20px; /* Agrega algo de padding para visualización */
+  font-family: var(--font-parrafo);
+   
+}
+
+.Form h1 {
+    font-family: var(--font-titulo);
+    font-weight: 900; /* Bold */
+    font-size: 2em; /* Ajusta según necesidad */
+    color: white; /* Asegúrate que el color sea visible sobre tu fondo */
+    padding-bottom: 20px;
+}
+
+
+.Form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre elementos del formulario */
+}
+
+.Form input, button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.Form button {
+    background-color: var(--azul-color);
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.Form label {
+    color: white; /* Asegura que las etiquetas sean visibles */
+}
